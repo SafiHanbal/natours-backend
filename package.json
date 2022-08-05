@@ -2,9 +2,10 @@
   "name": "natours",
   "version": "1.0.0",
   "description": "learning node, express and mongoDB",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js",
+    "start:prod": "SET NODE_ENV=development&&nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,24 @@
   "bugs": {
     "url": "https://github.com/SafiHanbal/natours-backend/issues"
   },
-  "homepage": "https://github.com/SafiHanbal/natours-backend#readme"
+  "homepage": "https://github.com/SafiHanbal/natours-backend#readme",
+  "engines": {
+    "node": ">=16.16.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "prettier": "^2.7.1"
+  }
 }
