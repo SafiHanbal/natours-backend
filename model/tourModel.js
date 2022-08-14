@@ -9,7 +9,7 @@ const tourSchema = new mongoose.Schema(
       unique: true,
       trim: true,
       maxlength: [40, 'A tour name must have less or equal to 40 characters'],
-      minlength: [40, 'A tour name must have more or equal to 10 characters'],
+      minlength: [10, 'A tour name must have more or equal to 10 characters'],
     },
     slug: String,
     duration: {
@@ -32,7 +32,7 @@ const tourSchema = new mongoose.Schema(
       type: Number,
       default: 4.5,
       min: [1, 'Ratings must be greater than 1'],
-      max: [1, 'Ratings must be lower than 5'],
+      max: [5, 'Ratings must be lower than 5'],
     },
     ratingsQuantity: {
       type: Number,
