@@ -39,7 +39,7 @@ reviewSchema.index({ user: 1, tour: 1 }, { unique: true });
 reviewSchema.pre(/^find/, async function (next) {
   this.populate({
     path: 'user',
-    select: 'name',
+    select: 'name photo',
   });
 
   next();

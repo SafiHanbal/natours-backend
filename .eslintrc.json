@@ -19,6 +19,9 @@
       {
         "endOfLine": "auto"
       }
-    ]
+    ],
+    "parserOptions": {
+      "ecmaVersion": 11
+    }
   }
 }
